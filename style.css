@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 62,5%;
+}
+body{
+    margin:0.2rem;
+    height: 100vh;
+    width: 100%;
+}
+header{
+    padding: 0.5rem;
+    background-color: #E5D9B6;
+}
+.logo{
+    margin-bottom: 2rem;
+}
+.logo .logo-img{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.logo-img img{
+    width: 8rem;
+}
+#menu-icon{
+    display: none;
+    text-align: center;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #285430;
+    padding:1rem;
+    margin: 1rem 0.5rem;
+    border-radius: 20%;
+}
+.menu ul li a:hover{
+    color: white;
+    background-color: #A4BE7B;
+}
+
+main{
+    text-align: center;
+    background-color: #A4BE7B;
+}
+.sale .sale-text{
+    font-family: 'Rubik 80s Fade', cursive;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+.sale-text .sale-details{
+    font-size: 3rem;
+}
+.sale img{
+    text-align: center;
+    width: 100%;
+}
+
+/*CARD*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    padding-bottom: 2rem; 
+}
+.card .card-img-top{
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #5F8D4E;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem;
+    
+}
+footer .logo .logo-img img{
+    width: 5.5rem;
+}
+
+@media(max-width: 815px){
+    .menu ul.show{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu ul{
+        display: none;
+        padding: 0px;
+    }
+    .menu ul li{
+        margin: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+    .items li a{
+        padding: 1rem;
+        font-size: 25px;
+    }
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .menu ul li a:hover{
+        color: white;
+        background-color: #A4BE7B;
+    }
+    .container{
+        grid-template-columns:0.7fr;
+        justify-content: center;
+        padding: 0.5rem;
+       padding-bottom: 1rem;
+    }
+    .sale .sale-text{
+        margin-bottom: 5rem
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media(max-width: 700px){
+    .sale .sale-text{
+        font-size: 3rem;
+    }
+    .sale-text .sale-details{
+        font-size: 2rem;
+    }
+
+}
+
